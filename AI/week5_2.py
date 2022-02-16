@@ -21,10 +21,8 @@ perm = permutations([0,1,2,3,4,5,6,7,8,9],len(d))
 for i in list(perm):
     index = 0
     for x in d.keys():
-        print(d)
         d[x] = i[index]
         index+=1
-        print(d[x],'1')
     x,y,z = fun(a),fun(b),fun(r)
     if x+y == z:
         print(x,y,z)
